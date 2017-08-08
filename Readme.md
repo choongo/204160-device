@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Павел Виноградов](https://up.htmlacademy.ru/htmlcss/18/user/204160).
-* Наставник: [Дмитрий Мишагин] (https://up.htmlacademy.ru/htmlcss/18/user/118967).
+* Наставник: [Дмитрий Мишагин](https://up.htmlacademy.ru/htmlcss/18/user/118967).
 
 ---
 
