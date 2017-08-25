@@ -4,13 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header class="main-header">
 		<nav class="main-nav">
-			<a href="#"><img src="http://placehold.it/164x36" width="164" height="36" alt="логотип магазин Device" class="logo"></a>
-			<form action="http://echo/device.ru" method="post" class="search">
+			<a href="#"><img src="img/logo.svg" width="164" height="36" alt="логотип магазин Device" class="logo"></a>
+			<form action="http://echo/device.ru" method="get" class="search">
 				<input type="search" name="search" placeholder="поиск посайту" class="input-search">
 				<input type="submit" value="" class="input-submit">
 			</form>
@@ -94,9 +95,9 @@
 					<legend>bluetooth</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="radio" name="filter-bluetooth" value="yes" id="bluetooth-yes" class="visually-hidden filter-input filter-input-radio" checked><label for="yes">Да</li>
+							<input type="radio" name="filter-bluetooth" value="yes" id="bluetooth-yes" class="visually-hidden filter-input filter-input-radio" checked><label for="bluetooth-yes">Да</label></li>
 						<li class="filter-option">
-							<input type="radio" name="filter-bluetooth" value="no" id="bluetooth-no" class="visually-hidden filter-input filter-input-radio"><label for="no">Нет</li>
+							<input type="radio" name="filter-bluetooth" value="no" id="bluetooth-no" class="visually-hidden filter-input filter-input-radio"><label for="bluetooth-no">Нет</label></li>
 					</ul>
 				</fieldset>
 				<button type="submit" class="filter-button">Показать</button>
@@ -126,7 +127,7 @@
 		<section class="catalog">
 			<h2>Список товаров в разделе Моноподы для селфи</h2>
 			<ul class="catalog-list">
-				<li class="catalog-item"><img src="//placehold.it/360x380" alt="" width="360" height="380">
+				<li class="catalog-item"><img src="img/item-1.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
 							<td><strong>Любительская селфи-палка</strong></td>
@@ -136,7 +137,7 @@
 					<button type="button" class="catalog-item-buy">Купить</button>
 					<button type="button" class="catalog-item-compare">Сравнить</button>
 				</li>
-				<li class="catalog-item"><img src="//placehold.it/360x380" alt="" width="360" height="380">
+				<li class="catalog-item"><img src="img/item-2.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
 							<td><strong>Профессиональная селфи-палка </strong></td>
@@ -146,7 +147,7 @@
 					<button type="button" class="catalog-item-buy">Купить</button>
 					<button type="button" class="catalog-item-compare">Сравнить</button>
 				</li>
-				<li class="catalog-item"><img src="//placehold.it/360x380" alt="" width="360" height="380">
+				<li class="catalog-item"><img src="img/item-3.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
 							<td><strong>Непотопляемая селфи-палка</strong></td>
@@ -156,7 +157,7 @@
 					<button type="button" class="catalog-item-buy">Купить</button>
 					<button type="button" class="catalog-item-compare">Сравнить</button>
 				</li>
-				<li class="catalog-item"><img src="//placehold.it/360x380" alt="" width="360" height="380">
+				<li class="catalog-item"><img src="img/item-4.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
 							<td><strong>Селфи-палка «Следуй за мной»</strong></td>
@@ -182,7 +183,7 @@
 	<footer class="main-footer">
 		<section class="footer-menu">
 			<h2 class="visually-hidden">Нижнее меню</h2>
-			<a href="#"><img src="http://placehold.it/263x36" width="163" height="36" alt="логотип магазин Device" class="footer-logo"></a>
+			<a href="#"><img src="img/logo.svg" width="163" height="36" alt="логотип магазин Device" class="footer-logo"></a>
 			<ul class="footer-user-menu">
 				<li class="footer-user-menu-item"><a href="#">Войти</a></li>
 				<li class="footer-user-menu-item"><a href="#">Сравнить</a></li>
