@@ -65,26 +65,28 @@
 					<legend>Стоимость</legend>
 					<ul>
 						<li class="filter-options">
-							<input type="range" name="value" id="value" min="0" max="10000" class="visually-hidden filter-input filter-input-range">
+							<input type="number" name="value-min" id="value-min" min="0" max="10000" step="10" class="visually-hidden filter-input filter-input-range">
+							<input type="number" name="value-max" id="value-max" min="0" max="10000" step="10" class="visually-hidden filter">
+						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
 					<legend>Цвет</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="checkbox" name="black" class="visually-hidden filter-input filter-input-checkbox">Чёрный
+							<input type="checkbox" name="filter-color" value="black" id="black" class="visually-hidden filter-input filter-input-checkbox"><label for="black">Чёрный</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" name="white" class="visually-hidden filter-input filter-input-checkbox" checked>Белый
+							<input type="checkbox" name="filter-color" value="white" id="white" class="visually-hidden filter-input filter-input-checkbox" checked><label for="white">Белый</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" name="blue" class="visually-hidden filter-input filter-input-checkbox" checked>Синий
+							<input type="checkbox" name="filter-color" value="blue" id="blue" class="visually-hidden filter-input filter-input-checkbox" checked><label for="blue">Синий</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" name="red" class="visually-hidden filter-input filter-input-checkbox" checked>Красный
+							<input type="checkbox" name="filter-color" value="red" id="red" class="visually-hidden filter-input filter-input-checkbox" checked><label for="red">Красный</label>
 						</li>
 						<li class="filter-option">
-							<input type="checkbox" name="pink" class="visually-hidden filter-input filter-input-checkbox">Розовый
+							<input type="checkbox" name="filter-color" value="pink" id="pink" class="visually-hidden filter-input filter-input-checkbox"><label for="pink">Розовый</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -92,9 +94,9 @@
 					<legend>bluetooth</legend>
 					<ul>
 						<li class="filter-option">
-							<input type="radio" name="bluetooth-yes" id="bluetooth-yes" class="visually-hidden filter-input filter-input-radio" checked>Да</li>
+							<input type="radio" name="filter-bluetooth" value="yes" id="bluetooth-yes" class="visually-hidden filter-input filter-input-radio" checked><label for="yes">Да</li>
 						<li class="filter-option">
-							<input type="radio" name="bluetooth-no" id="bluetooth-no" class="visually-hidden filter-input filter-input-radio">Нет</li>
+							<input type="radio" name="filter-bluetooth" value="no" id="bluetooth-no" class="visually-hidden filter-input filter-input-radio"><label for="no">Нет</li>
 					</ul>
 				</fieldset>
 				<button type="submit" class="filter-button">Показать</button>
@@ -105,19 +107,19 @@
 			<fieldset>
 				<ul>
 					<li class="sort-option">
-						<input type="radio" name="sort-class" value="price" class="visually-hidden sort-input sort-input-radio" checked>По цене</li>
+						<a href="#" class="current">По цене</a></li>
 					<li class="sort-option">
-						<input type="radio" name="sort-class" value="type" class="visually-hidden sort-input sort-input-radio">По типу</li>
+						<a href="#">По типу</a></li>
 					<li class="sort-option">
-						<input type="radio" name="sort-class" value="popular" class="visually-hidden sort-input sort-input-radio">По популярности</li>
+						<a href="#">По популярности</a></li>
 				</ul>
 			</fieldset>
 			<fieldset>
 				<ul>
 					<li class="sort-option">
-						<input type="radio" name="sort-rank" value="top" class="visually-hidden sort-input sort-input-radio">По возрастанию</li>
+						<a href="#" class="visually-hidden">По возрастанию</a></li>
 					<li class="sort-option">
-						<input type="radio" name="sort-rank" value="bottom" class="visually-hidden sort-input sort-input-radio" checked>По убыванию</li>
+						<a href="#" class="visually-hidden-current">По убыванию</a></li>
 				</ul>
 			</fieldset>
 		</section>
