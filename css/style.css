@@ -1,21 +1,313 @@
+@import "http://fonts.fontstorage.com/import/opensans.css";
+/*font-family: 'Open Sans';*/
+@import url "http://fonts.fontstorage.com/import/gilroy.css";
+/*font-family: 'Gilroy';*/
+
 body {
-	margin: 0;
-	padding: 0;
-	font-family: "Verdana", sans-serif;
-	font-size: 15px;
-	font-weight: normal;
-	line-height: 30px;
-	color: #000000;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans Light", "Verdana", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.15px;
+  color: #000000;
 }
 
-.main-conteiner h1 {
-	font-size: 47px;
-	font-weight: 700;
-	line-height: normal;
+a {
+  text-decoration: none;
 }
 
-.info h2 {
-	font-size: 47px;
-	font-weight: 700;
-	line-height: normal;
+.button {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f0c52e;
 }
+
+.button:hover,
+.button:focus {
+/*  Изменяется размер background, Пока не понял как делать */
+}
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  
+  background-color: rgb(240, 197, 46);
+}
+
+        /* GLOBAL END */
+
+.main-nav {
+  background-color: #f7e296;
+}
+
+.input-search,
+.submit-search {
+  font: inherit;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.3);
+  
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.input-search:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+.input-search:focus {
+  color: #000000;
+  
+  border-bottom-color: 3px solid #000000;
+  outline: none;
+}
+
+.submit-search:focus {
+  color: #000000;
+  
+  border-color: 2px solid #000000;
+  outline: none;
+}
+
+.main-nav ul,
+.site-nav ul {
+  list-style: none;
+}
+
+.user-nav a,
+.site-nav a {
+  color: #000000;
+}
+
+.user-nav a:hover,
+.user-nav a:focus,
+.site-nav a:hover,
+.site-nav a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-nav a:active,
+.site-nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-nav,
+.dropdown-menu-list {
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  text-transform: capitalize;
+}
+
+.site-nav {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+        /* HEAER END */
+
+.slider {
+  background-color: #ffffff;
+}
+
+.slider-radio,
+.slider-list {
+  list-style: none;
+}
+
+.slider b {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.slider th {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.slider td {
+  font-family: "Gilroy Light", sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 300;
+}
+
+        /* SLIDER END */
+
+.popular-list {
+  list-style: none;
+  
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.popular-list a {
+  color: #000000;
+}
+
+.popular-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+        /* POPULAR  END */
+
+.servises {
+  background-color: #e5e5e5;
+}
+
+.servises-menu {
+  list-style: none;
+}
+  
+  background-color: #f0c52e;
+}
+
+.servises-menu-item .a:active {                    /* Непонятно, не работает active! */
+  color: #f7e184;
+  
+  background-color: #000000;
+} 
+
+.servises h3 {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+        /* SERVISES END */
+
+.brands-logo {
+  list-style: none;
+}
+
+.brands-logo a {
+  filter: grayscale(100%);
+  opacity: 0.2;
+}
+
+.brands-logo a:hover,
+.brands-logo a:focus {
+  filter: none;
+  opacity: 1;
+}
+
+/*   BRANDS END */
+
+.index-info h2 {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  font-weight: 700;
+}
+
+.about-us ul {
+  list-style-type: circle;
+}
+
+.about-us strong {
+  font-family: "Gilroy ExtraBold", sans-serif;
+}
+
+        /* ABOUT-US END, CONTACT END */
+                /* MAIN END */
+
+.main-footer {
+  color: #ffffff;
+  background-color: #464646;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+.footer-user-nav,
+.footer-site-nav {
+  list-style: none;
+}
+
+.footer-user-nav a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-nav a:hover,
+.footer-user-nav a:focus {
+  color: rgba(255, 255, 255, 1);;
+}
+
+.footer-user-nav a:active {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.footer-site-nav a:hover,
+.footer-site-nav a:focus {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-nav a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+        /* FOOTER-MENU END */
+
+.footer-social-button {
+  list-style: none;
+}
+
+        /* FOOTER-CONTACT END */
+         /* MAIN-FOOTER END */
+
+.message label {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.message input,
+.message textarea {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+  
+  background-color: #f2f2f2;
+}
+
+.message input:hover,
+.message textarea:hover {
+  background-color: #eaeaea;
+}
+
+.message input:focus,
+.message textarea:focus {
+  color: #000000;
+  border-color: #f7e296;
+  outline: none;
+  
+  background-color: #ffffff;
+}
+
+.message input:required:invalid {
+  border-color: #f6dada;
+  background-color: #f6dada;
+}
+
+        /* MODAL WRITE-US END */
+
