@@ -117,6 +117,10 @@ a {
   text-transform: uppercase;
 }
 
+.login:not(:first-child) a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
         /* HEAER END */
 
 .slider {
@@ -310,4 +314,169 @@ a {
 }
 
         /* MODAL WRITE-US END */
+            /*--- PAGE INDEX END ---*/
 
+.main-conteiner h1 {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 47px;
+  line-height: normal;
+  letter-spacing: 0.47px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  line-height: 36px;
+  letter-spacing: 0.14px;
+  color: #000000;
+  opacity: 0.3;
+  
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.1;
+}
+
+.filter {
+  background-color: #efefef;
+}
+
+.filter h2 {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: 0.18px;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+}
+
+.filter-input:hover,
+.filter-input:focus {
+  opacity: 0.6;
+}
+
+.sort {
+  background-color: #ebebeb;
+}
+
+.sort h2 {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  list-style:none;
+}
+
+.sort-list a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 900;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+  opacity: 0.6;
+}
+
+.sort-list a:active{
+  opacity: 1;
+}
+
+        /* FILTER END, SORT END */
+
+.catalog ul {
+  list-style: none;
+}
+
+.catalog-list img:hover,
+.catalog-list img:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.catalog-list td {
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.16px;
+}
+
+.catalog-list a {
+  color: #000000;
+}
+
+.catalog-item-compare {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.catalog-item-compare:hover,
+.catalog-item-compare:focus {
+  color: #000000;
+}
+
+.catalog-item-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+        /* CATALOG END */
+
+.pagination {
+  background-color: #ebebeb;
+}
+
+.pagination ul {
+  list-style: none;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  font-weight: 900;
+}
+
+.pagination a {
+  color: #000000;
+}
+
+.pagination a:focus {
+  opacity: 0.3;
+}
