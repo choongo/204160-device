@@ -21,7 +21,7 @@
 				<li class="user-nav login"><a href="#">Войти</a></li>
 				<li class="user-nav compare"><a href="#">Сравнить</a></li>
 				<li class="user-nav basket"><a href="#">Корзина</a></li>
-				<li class="site-nav catalog"><a href="#">Каталог товаров</a>
+				<li class="site-nav catalog button"><a href="#">Каталог товаров</a>
 					<ul class="dropdown-menu">
 						<li>
 							<ul class="dropdown-menu-list">
@@ -43,24 +43,24 @@
 						</li>
 					</ul>
 				</li>
-				<li class="site-nav dilivery"><a href="#">Доставка</a></li>
-				<li class="site-nav warranty"><a href="#">Гарантия</a></li>
-				<li class="site-nav contact"><a href="#">Контакты</a></li>
+				<li class="site-nav dilivery button"><a href="#">Доставка</a></li>
+				<li class="site-nav warranty button"><a href="#">Гарантия</a></li>
+				<li class="site-nav contact button"><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main class="main-conteiner">
-		<h1>Моноподы для селфи</h1>
+		<h1 class="title-index">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Моноподы для селфи</a></li>
 		</ul>
 		<section class="filter">
-			<h2>Фильтр</h2>
-			<form action="action="https://echo.htmlacademy.ru"" method="get" class="filter">
+			<h2 class="button">Фильтр</h2>
+			<form action="https://echo.htmlacademy.ru" method="get" class="filter">
 				<fieldset>
-					<legend>Стоимость</legend>
+					<legend class="title-index">Стоимость</legend>
 					<ul>
 						<li class="filter-options">
 							<input type="number" name="value-min" id="value-min" min="0" max="10000" step="10" class="visually-hidden filter-input filter-input-range">
@@ -68,7 +68,7 @@
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>Цвет</legend>
+					<legend class="title-index">Цвет</legend>
 					<ul>
 						<li class="filter-option">
 							<input type="checkbox" name="filter-color" value="black" id="black" class="visually-hidden filter-input filter-input-checkbox">
@@ -93,7 +93,7 @@
 					</ul>
 				</fieldset>
 				<fieldset>
-					<legend>bluetooth</legend>
+					<legend class="title-index">bluetooth</legend>
 					<ul>
 						<li class="filter-option">
 							<input type="radio" name="filter-bluetooth" value="yes" id="bluetooth-yes" class="visually-hidden filter-input filter-input-radio" checked>
@@ -109,7 +109,7 @@
 			</form>
 		</section>
 		<section class="sort">
-			<h2>Сортировка</h2>
+			<h2 class="button">Сортировка</h2>
             <ul class="sort-list">
                 <li class="sort-option"> <a href="#" class="current">По цене</a></li>
                 <li class="sort-option"> <a href="#">По типу</a></li>
@@ -124,7 +124,7 @@
 				<li class="catalog-item"><img src="img/item-1.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
-                          <td><strong><a href="#">Любительская селфи-палка</a></strong></td>
+							<td><strong class="title-catalog"><a href="#">Любительская селфи-палка</a></strong></td>
 							<td>500 pуб.</td>
 						</tr>
 					</table>
@@ -134,7 +134,7 @@
 				<li class="catalog-item"><img src="img/item-2.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
-                          <td><strong><a href="#">Профессиональная селфи-палка</a></strong></td>
+							<td><strong class="title-catalog"><a href="#">Профессиональная селфи-палка</a></strong></td>
 							<td>1500 руб.</td>
 						</tr>
 					</table>
@@ -144,7 +144,7 @@
 				<li class="catalog-item"><img src="img/item-3.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
-                          <td><strong><a href="#">Непотопляемая селфи-палка</a></strong></td>
+							<td><strong class="title-catalog"><a href="#">Непотопляемая селфи-палка</a></strong></td>
 							<td>2500 руб.</td>
 						</tr>
 					</table>
@@ -154,7 +154,7 @@
 				<li class="catalog-item"><img src="img/item-4.jpg" alt="" width="360" height="380">
 					<table>
 						<tr>
-                          <td><strong><a href="#">Селфи-палка «Следуй за мной»</a></strong></td>
+							<td><strong class="title-catalog"><a href="#">Селфи-палка «Следуй за мной»</a></strong></td>
 							<td>4900 руб.</td>
 						</tr>
 					</table>
@@ -165,12 +165,12 @@
 		</section>
 		<section class="pagination">
 			<h3 class="visually-hidden">Нумерация страниц текушего раздела каталога</h3> 
+			<a href="#" class="button">Назад</a>
+			<a href="#" class="button">Вперёд</a>
 			<ul class="pagination-list">
-			    <li class="pagination-item"><a href="#">Назад</a></li>
-				<li class="pagination-item"><a href="#" class="current">1</a></li>
-				<li class="pagination-item"><a href="#">2</a></li>
-				<li class="pagination-item"><a href="#">3</a></li>
-				<li class="pagination-item"><a href="#">Вперёд</a></li>
+				<li class="pagination-item button"><a href="#" class="current">1</a></li>
+				<li class="pagination-item button"><a href="#">2</a></li>
+				<li class="pagination-item button"><a href="#">3</a></li>
 			</ul> 
 		</section>
 	</main>
@@ -184,9 +184,9 @@
 				<li class="footer-user-nav-item"><a href="#">Корзина</a></li>
 			</ul>
 			<ul class="footer-site-nav site-nav">
-				<li class="footer-site-nav-item"><a href="#">Доставка</a></li>
-				<li class="footer-site-nav-item"><a href="#">Гарантия</a></li>
-				<li class="footer-site-nav-item"><a href="#">Контакты</a></li>
+				<li class="footer-site-nav-item button"><a href="#">Доставка</a></li>
+				<li class="footer-site-nav-item button"><a href="#">Гарантия</a></li>
+				<li class="footer-site-nav-item button"><a href="#">Контакты</a></li>
 			</ul>
 		</section>
 		<section class="footer-contact">
