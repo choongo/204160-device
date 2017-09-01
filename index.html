@@ -14,38 +14,46 @@
 		<nav class="main-nav">
 			<a href=""><img src="img/logo.svg" width="164" height="36" alt="логотип магазин Device" class="logo"></a>
 			<form action="https://echo.htmlacademy.ru" method="get" class="search">
-				<input type="search" name="search" placeholder="Поиск посайту" class="input-search">
-				<input type="submit" value="Найти" class="submit-search visually-hidden">
+				<input type="search" name="search" placeholder="Поиск посайту">
+				<input type="submit" value="Найти" class="visually-hidden">
 			</form>
 			<ul class="main-menu">
-				<li class="user-nav login"><a href="#">Войти</a></li>
-				<li class="user-nav compare"><a href="#">Сравнить</a></li>
-				<li class="user-nav basket"><a href="#">Корзина</a></li>
-				<li class="site-nav catalog button"><a href="catalog.html">Каталог товаров</a>
-					<ul class="dropdown-menu">
-						<li>
-							<ul class="dropdown-menu-list">
-								<li class="dropdown-menu-item"><a href="catalog.html">Виртуальная реальность</a></li>
-								<li class="dropdown-menu-item"><a href="catalog.html">Монопод для селфи</a></li>
-								<li class="dropdown-menu-item"><a href="catalog.html">Экшн-камера</a></li>
+				<li class="main-menu-item">
+					<ul class="user-nav">
+						<li class="user-nav-item login"><a href="#">Войти</a></li>
+						<li class="user-nav-item compare"><a href="#">Сравнить</a></li>
+						<li class="user-nav-item basket"><a href="#">Корзина</a></li>
+					 </ul>
+				</li>
+				<li class="main-menu-item">
+					<ul class="site-nav">
+						<li class="site-nav-item catalog"><a href="catalog.html">Каталог товаров</a>
+							<ul class="dropdown-menu">
+								<li>
+									<ul class="dropdown-menu-list">
+										<li class="dropdown-menu-item"><a href="catalog.html">Виртуальная реальность</a></li>
+										<li class="dropdown-menu-item"><a href="catalog.html">Монопод для селфи</a></li>
+										<li class="dropdown-menu-item"><a href="catalog.html">Экшн-камера</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="dropdown-menu-list">
+										<li class="dropdown-menu-item"><a href="catalog.html">Фитнес-браслеты</a></li>
+										<li class="dropdown-menu-item"><a href="catalog.html">Умные часы</a></li>
+									</ul>
+								</li>
+								<li>
+									<ul class="dropdown-menu-list">
+										<li class="dropdown-menu-item"><a href="catalog.html">Квадрокоптеры</a></li>
+									</ul>
+								</li>
 							</ul>
 						</li>
-						<li>
-							<ul class="dropdown-menu-list">
-								<li class="dropdown-menu-item"><a href="catalog.html">Фитнес-браслеты</a></li>
-								<li class="dropdown-menu-item"><a href="catalog.html">Умные часы</a></li>
-							</ul>
-						</li>
-						<li>
-							<ul class="dropdown-menu-list">
-								<li class="dropdown-menu-item"><a href="catalog.html">Квадрокоптеры</a></li>
-							</ul>
-						</li>
+						<li class="site-nav-item dilivery"><a href="#">Доставка</a></li>
+						<li class="site-nav-item warranty"><a href="#">Гарантия</a></li>
+						<li class="site-nav-item contact"><a href="#">Контакты</a></li>
 					</ul>
 				</li>
-				<li class="site-nav dilivery button"><a href="#">Доставка</a></li>
-				<li class="site-nav warranty button"><a href="#">Гарантия</a></li>
-				<li class="site-nav contact button"><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -66,7 +74,7 @@
 			</ol>
 			<ol class="slider-list">
 				<li class="slider-item"> <img src="img/slider-1.png" alt="Слайд 1" width="384" height="486">
-					<p class="title-index">Делай селфи, как Бен Стиллер!</p>
+					<p class="page-title">Делай селфи, как Бен Стиллер!</p>
 					<p>Самая длинная палка для селфи доступна в нашем магазине.
 					 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					<a href="#" class="button">Подробнее</a>
@@ -84,7 +92,7 @@
 					</table>
 				</li>
 				<li class="slider-item"> <img src="img/slider-2.png" alt="Слайд 3" width="345" height="485">
-					<p class="title-index">Худеем правильно!</p>
+					<p class="page-title">Худеем правильно!</p>
 					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					<a href="#" class="button">Подробнее</a>
 					<table>
@@ -97,7 +105,7 @@
 					</table>
 				</li>
 				<li class="slider-item"> <img src="img/slider-3.png" alt="Слайд 3" width="526" height="334">
-					<p class="title-index">Порхает как бабочка, жалит как пчела!</p>
+					<p class="page-title">Порхает как бабочка, жалит как пчела!</p>
 					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					<a href="#" class="button">Подробнее</a>
 					<table>
@@ -115,7 +123,7 @@
 		</section>
 		<section class="popular">
 			<h2 class="visually-hidden">Самые популярные девайсы</h2>
-			<ul class="popular-list title-index">
+			<ul class="popular-list">
 				<li class="popular-item"><a href="catalog.html">Виртуальная реальность</a></li>
 				<li class="popular-item"><a href="catalog.html">Моноподы для селфи</a></li>
 				<li class="popular-item"><a href="catalog.html">Экшн-камеры</a></li>
@@ -127,21 +135,21 @@
 		<section class="servises">
 			<h2 class="visually-hidden">Наши услуги</h2>
 			<ul class="servises-menu">
-				<li class="servises-menu-item button"><a href="#">Доставка</a></li>
-				<li class="servises-menu-item button"><a href="#">Гарантия</a></li>
-				<li class="servises-menu-item button"><a href="#">Кредит</a></li>
+				<li class="servises-menu-item"><a href="#" class="button">Доставка</a></li>
+				<li class="servises-menu-item"><a href="#" class="button">Гарантия</a></li>
+				<li class="servises-menu-item"><a href="#" class="button">Кредит</a></li>
 			</ul>
 			<section class="servises-dilivery ">
-				<h3 class="title-index">Доставка</h3>
+				<h3 class="page-title">Доставка</h3>
 				<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! 
 				Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 			</section>
 			<section class="servises-warranty">
-				<h3  class="title-index">Гарантия</h3>
+				<h3  class="page-title">Гарантия</h3>
 				<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 			</section>
 			<section class="servises-credit">
-				<h3  class="title-index">Кредит</h3>
+				<h3  class="page-title">Кредит</h3>
 				<p>Залезть в долговую яму стало проще! 
 				Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
 				Выгодные для нашего банка, разумеется.</p>
@@ -166,7 +174,7 @@
 		</section>
 		<div class="index-info">
 			<section class="about-us">
-				<h2  class="title-index">О нас</h2>
+				<h2  class="page-title">О нас</h2>
 				<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
 				<p>Мы можем доставить ваш товар в самые отдаленные точки россии! 
 				Device работает со многими транспортными компаниями: </p>
@@ -178,7 +186,7 @@
 				<a href="#" class="button">Подробнее о нас</a>
 			</section>
 			<section class="contact">
-				<h2  class="title-index">Контакты</h2>
+				<h2  class="page-title">Контакты</h2>
 				<p>Вы можете забрать товар сами, заехав в наш офис. 
 				Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 				<a href="#"><img src="img/map.jpg" alt="Карта, наше местонахождение" width="560" height="222"></a>
@@ -196,9 +204,9 @@
 				<li class="footer-user-nav-item"><a href="#">Корзина</a></li>
 			</ul>
 			<ul class="footer-site-nav site-nav ">
-				<li class="footer-site-nav-item button"><a href="#">Доставка</a></li>
-				<li class="footer-site-nav-item button"><a href="#">Гарантия</a></li>
-				<li class="footer-site-nav-item button"><a href="#">Контакты</a></li>
+				<li class="footer-site-nav-item"><a href="#">Доставка</a></li>
+				<li class="footer-site-nav-item"><a href="#">Гарантия</a></li>
+				<li class="footer-site-nav-item"><a href="#">Контакты</a></li>
 			</ul>
 		</section>
 		<section class="footer-contact">
@@ -219,11 +227,11 @@
 		<h2 class="visually-hidden">Напишите нам</h2>
 		<form action="https://echo.htmlacademy.ru" class="message">
 			<input type="text" name="name" id="name" placeholder="Представтесь пожалуйста" class="message-name-user ">
-			<label for="name" class="title-index">Ваше имя:</label>
+			<label for="name" class="page-title">Ваше имя:</label>
 			<input type="email" name="email" id="email" placeholder="Для отправки ответа" class="message-email-user">
-			<label for="email" class="title-index">Ваш e-mail:</label>
+			<label for="email" class="page-title">Ваш e-mail:</label>
 			<textarea name="message" id="message" placeholder="В свободной форме" cols="30" rows="10" class="message-text"></textarea>
-			<label for="message" class="title-index">Текст письма:</label>
+			<label for="message" class="page-title">Текст письма:</label>
 			<button type="submit" class="button">Отправить</button>
 			<button type="button" class="modal-close">Закрыть</button>
 		</form>
