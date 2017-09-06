@@ -10,69 +10,78 @@
 
 <body>
 	<header class="main-header">
-		<nav class="main-nav">
-			<a href="index.html"><img src="img/logo.svg" width="164" height="36" alt="логотип магазин Device" class="logo"></a>
-			<form action="https://echo.htmlacademy.ru" method="get" class="search">
-				<input type="search" name="search" placeholder="Поиск посайту">
-				<input type="submit" value="Найти" class="visually-hidden">
-			</form>
-			<ul class="main-menu">
-				<li class="main-menu-item">
-					<ul class="user-nav">
-						<li class="user-nav-item user-name"><a href="#">Валентин Петухов</a></li>
-						<li class="user-nav-item login"><a href="#">Войти</a></li>
-						<li class="user-nav-item compare"><a href="#">Сравнить</a></li>
-						<li class="user-nav-item basket"><a href="#">Корзина</a></li>
-					</ul>
-				</li>
-				<li class="main-menu-item">
-					<ul class="site-nav">
-						<li class="site-nav-item catalog"><a href="#">Каталог товаров</a>
-							<ul class="dropdown-menu">
-								<li>
-									<ul class="dropdown-menu-list">
-										<li class="dropdown-menu-item"><a href="#">Виртуальная реальность</a></li>
-										<li class="dropdown-menu-item"><a href="#">Монопод для селфи</a></li>
-										<li class="dropdown-menu-item"><a href="#">Экшн-камера</a></li>
-									</ul>
-								</li>
-								<li>
-									<ul class="dropdown-menu-list">
-										<li class="dropdown-menu-item"><a href="#">Фитнес-браслеты</a></li>
-										<li class="dropdown-menu-item"><a href="#">Умные часы</a></li>
-									</ul>
-								</li>
-								<li>
-									<ul class="dropdown-menu-list">
-										<li class="dropdown-menu-item"><a href="#">Квадрокоптеры</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li class="site-nav-item dilivery"><a href="#">Доставка</a></li>
-						<li class="site-nav-item warranty"><a href="#">Гарантия</a></li>
-						<li class="site-nav-item contact"><a href="#">Контакты</a></li>
-					</ul>
-				</li>	
-			</ul>
-		</nav>
+		<div class="conteiner">
+			<nav class="main-nav">
+				<a href="index.html"><img src="img/logo.svg" width="164" height="36" alt="логотип магазин Device" class="header-logo logo"></a>
+				<ul class="main-menu">
+					<li class="main-menu-item">
+						<ul class="user-nav">
+							<li class="user-nav-item search-form">
+								<form action="https://echo.htmlacademy.ru" method="get" class="search">
+									<input type="search" name="search" placeholder="Поиск посайту">
+									<input type="submit" value="Найти" class="visually-hidden">
+								</form>
+							</li>
+							<li class="user-nav-item user-name"><a href="#">Валентин Петухов</a></li>
+							<li class="user-nav-item login"><a href="#">Войти</a></li>
+							<li class="user-nav-item compare"><a href="#">Сравнить</a></li>
+							<li class="user-nav-item basket"><a href="#">Корзина</a></li>
+						</ul>
+					</li>
+					<li class="main-menu-item">
+						<ul class="site-nav">
+							<li class="site-nav-item catalog"><a href="#">Каталог товаров</a>
+								<ul class="dropdown-menu">
+									<li>
+										<ul class="dropdown-menu-list">
+											<li class="dropdown-menu-item"><a href="#">Виртуальная реальность</a></li>
+											<li class="dropdown-menu-item"><a href="#">Монопод для селфи</a></li>
+											<li class="dropdown-menu-item"><a href="#">Экшн-камера</a></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="dropdown-menu-list">
+											<li class="dropdown-menu-item"><a href="#">Фитнес-браслеты</a></li>
+											<li class="dropdown-menu-item"><a href="#">Умные часы</a></li>
+										</ul>
+									</li>
+									<li>
+										<ul class="dropdown-menu-list">
+											<li class="dropdown-menu-item"><a href="#">Квадрокоптеры</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="site-nav-item dilivery"><a href="#">Доставка</a></li>
+							<li class="site-nav-item warranty"><a href="#">Гарантия</a></li>
+							<li class="site-nav-item contact"><a href="#">Контакты</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main class="main-conteiner">
+		<div class="conteiner-headline">
 		<h1 class="page-title">Моноподы для селфи</h1>
 		<ul class="breadcrumbs">
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Каталог</a></li>
 			<li><a href="#">Моноподы для селфи</a></li>
 		</ul>
+		</div>
+<!--		<div class="conteiner-filter-sort">-->
 		<section class="filter">
+<!--			<div class="conteiner-filter">-->
 			<h2>Фильтр</h2>
-			<form action="https://echo.htmlacademy.ru" method="get" class="filter">
+			<form action="https://echo.htmlacademy.ru" method="get" class="filter-form">
 				<fieldset>
 					<legend>Стоимость</legend>
 					<ul>
 						<li class="filter-options">
 							<input type="number" name="value-min" id="value-min" min="0" max="10000" step="10" class="visually-hidden filter-input filter-input-range">
-							<input type="number" name="value-max" id="value-max" min="0" max="10000" step="10" class="visually-hidden filter"> </li>
+							<input type="number" name="value-max" id="value-max" min="0" max="10000" step="10" class="visually-hidden filter"> 
+						</li>
 					</ul>
 				</fieldset>
 				<fieldset>
@@ -115,17 +124,21 @@
 				</fieldset>
 				<button type="submit" class="button">Показать</button>
 			</form>
+<!--			</div>-->
 		</section>
 		<section class="sort">
+		<div class="conteiner-sort">
 			<h2>Сортировка</h2>
-            <ul class="sort-list">
-                <li class="sort-option"> <a href="#" class="current">По цене</a></li>
-                <li class="sort-option"> <a href="#">По типу</a></li>
-                <li class="sort-option"> <a href="#">По популярности</a></li>
-                <li class="sort-option"> <a href="#" class="visually-hidden">По возрастанию</a></li>
-                <li class="sort-option"> <a href="#" class="visually-hidden-current">По убыванию</a></li>
-            </ul>
+			<ul class="sort-list">
+				<li class="sort-option"> <a href="#" class="current">По цене</a></li>
+				<li class="sort-option"> <a href="#">По типу</a></li>
+				<li class="sort-option"> <a href="#">По популярности</a></li>
+				<li class="sort-option"> <a href="#" class="visually-hidden">По возрастанию</a></li>
+				<li class="sort-option"> <a href="#" class="visually-hidden-current">По убыванию</a></li>
+			</ul>
+			</div>
 		</section>
+<!--		</div>-->
 		<section class="page-catalog">
 			<h2 class="visually-hidden">Список товаров в разделе Моноподы для селфи</h2>
 			<ul class="catalog-list">
@@ -183,33 +196,41 @@
 		</section>
 	</main>
 	<footer class="main-footer">
-		<section class="footer-menu">
-			<h2 class="visually-hidden">Нижнее меню</h2>
-			<a href="#"><img src="img/logo.svg" width="163" height="36" alt="логотип магазин Device" class="footer-logo"></a>
-			<ul class="footer-user-nav user-nav">
-				<li class="footer-user-nav-item"><a href="#">Войти</a></li>
-				<li class="footer-user-nav-item"><a href="#">Сравнить</a></li>
-				<li class="footer-user-nav-item"><a href="#">Корзина</a></li>
-			</ul>
-			<ul class="footer-site-nav site-nav">
-				<li class="footer-site-nav-item"><a href="#">Доставка</a></li>
-				<li class="footer-site-nav-item"><a href="#">Гарантия</a></li>
-				<li class="footer-site-nav-item"><a href="#">Контакты</a></li>
-			</ul>
-		</section>
-		<section class="footer-contact">
-			<h2 class="visually-hidden">Как нас найти (адрес, телефон, в соц. сети)</h2>
-			<p class="footer-contact-address">г.Москва, ул.Строителей, 15</p>
-			<p class="footer-contact-tel"><a href="tel:+74954959595">тел.: +7 (495) 495-95-95</a></p>
-			<ul class="footer-social-button">
-				<li class="footer-social-btn"> <a href="https://www.facebook.com" target="_blank">facebook</a> </li>
-				<li class="footer-social-btn"> <a href="https://www.instagram.com" target="_blank">Instagram</a> </li>
-				<li class="footer-social-btn"> <a href="https://twitter.com" target="_blank">Twitter</a> </li>
-			</ul>
-		</section>
-		<address class="html-academy">
-			<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="visually-hidden">html academy.ru</a>
-    	</address>
+		<div class="footer-conteiner">
+			<div class="conteiner">
+				<section class="footer-menu">
+					<h2 class="visually-hidden">Нижнее меню</h2>
+					<a href="#"><img src="img/logo.svg" width="163" height="36" alt="логотип магазин Device" class="footer-logo"></a>
+					<ul class="footer-user-nav user-nav">
+						<li class="footer-user-nav-item"><a href="#">Войти</a></li>
+						<li class="footer-user-nav-item"><a href="#">Сравнить</a></li>
+						<li class="footer-user-nav-item"><a href="#">Корзина</a></li>
+					</ul>
+					<ul class="footer-site-nav site-nav ">
+						<li class="footer-site-nav-item"><a href="#">Доставка</a></li>
+						<li class="footer-site-nav-item"><a href="#">Гарантия</a></li>
+						<li class="footer-site-nav-item"><a href="#">Контакты</a></li>
+					</ul>
+				</section>
+			</div>
+			<section class="footer-contact">
+				<h2 class="visually-hidden">Как нас найти (адрес, телефон, в соц. сети)</h2>
+				<div class="footer-contact-conteiner">
+					<p class="footer-contact-address">г.Москва, ул.Строителей, 15</p>
+					<p class="footer-contact-tel"><a href="tel:+74954959595">тел.: +7 (495) 495-95-95</a></p>
+				</div>
+				<ul class="footer-social-button">
+					<li class="footer-social-btn"> <a href="https://www.facebook.com" target="_blank">facebook</a> </li>
+					<li class="footer-social-btn"> <a href="https://www.instagram.com" target="_blank">Instagram</a> </li>
+					<li class="footer-social-btn"> <a href="https://twitter.com" target="_blank">Twitter</a> </li>
+				</ul>
+			</section>
+			<div class="address-wrap">
+				<address class="html-academy">
+				<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" class="visually-hidden">html academy.ru</a>
+			</address>
+			</div>
+		</div>
 	</footer>
 </body>
 
